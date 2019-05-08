@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% load timestamp_to_time %}
+
+{% block title %}{{ user.user_name }}'s Profile{% endblock title %}
+
+{% block links %}{% include "loggedInLinks.html" %}{% endblock %} {% block content %}
+    {% ifequal valid_user True %}
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="page-header">
+                    <h1>{{ user.user_name }}'s Profile</h1>
+                </div>
+                <form class="form-horizontal" method="post" action="{% url 'user_profile' %}">{% csrf_token %}
+                    {{ form|as_bootstrap_horizontal }}
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">
+                                Apply Changes
+                            </button>
+                            <a class="btn btn-danger" href="{% url 'delete_user' user.user_id %}">
+                                Delete Profile
+                            </a>
+                        </div>
+                        {% if form.errors and resultMessage != "Saved!"%}
+                            <p class="error-message"> {{ resultMessage }} </p>
+                        {% else %}
+                            <p class="success-message"> {{ resultMessage }} </p>
+                        {% endif %}
+                    </div>
+                </form>
+            </div>
+        </div>
+    {% else %}
+        {% include 'unauthorized.html' %}
+    {% endifequal %}
+{% endblock content %}

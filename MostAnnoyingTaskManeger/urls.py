@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from AnnoyingManager import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'', views.Login.as_view(), name='login'),
+    path(r'login', views.Login.as_view(), name='login'),
+    path(r'register', views.Register.as_view(), name='new_user'),
+    path(r'tasks', views.TaskList.as_view(), name='tasks_list'),
+    path(r'tasks/delete/<task_id>', views.delete_task, name='delete_task'),
+    path(r'lateTasks', views.LateTasks.as_view(), name='late_tasks'),
+    path(r'profile', views.Profile.as_view(), name='user_profile'),
+    path(r'profile/delete/<user_id>', views.delete_user, name='delete_user'),
+    path(r'logout', views.Logout.as_view(), name='logout'),
 ]

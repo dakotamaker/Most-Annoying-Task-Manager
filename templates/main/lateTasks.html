@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load timestamp_to_time %}
+
+{% block title %}Late Tasks{% endblock title %}
+{% block links %}{% include "loggedInLinks.html" %}{% endblock %}
+{% block content %}
+    {% ifequal valid_user True %}
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="page-header">
+                    <h1>Late Tasks</h1>
+                </div>
+                {% if late_tasks|length != 0 %}
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for task in late_tasks %}
+                        <tr>
+                            <td>{{ task.description }}</td>
+                            <td class="late-date">{{ task.due_date|timestamp_to_time|date:"m/d/Y, "}} {{ task.due_date|timestamp_to_time|time:"h:i a"}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p class="success-message">No late tasks!</p>
+                {% endif %}
+            </div>
+        </div>
+    {% else %}
+            {% include 'unauthorized.html' %}
+    {% endifequal %}
+{% endblock content %}

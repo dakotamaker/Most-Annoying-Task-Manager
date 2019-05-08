@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+
+{% block title %}Register New User{% endblock title %}
+
+{% block links %}{% include "logInAndRegisterLinks.html" %}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-9">
+        <div class="page-header">
+            <h1>Register New User</h1>
+        </div>
+        <form class="form-horizontal" method="post" action="{% url 'new_user' %}">{% csrf_token %}
+            {{ form|as_bootstrap_horizontal }}
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">
+                        Create
+                    </button>
+
+                </div>
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href={% url 'login' %}>Already have an account? Log in here!</a>
+                </div>
+                {% if form.errors %}
+                    <p class="error-message"> {{ error }} </p>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

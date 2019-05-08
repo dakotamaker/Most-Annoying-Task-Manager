@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load timestamp_to_time %}
+
+{% block title %}{{ user.user_name }}'s Tasks{% endblock title %}
+
+{% block links %}{% include "loggedInLinks.html" %}{% endblock %}
+
+{% block content %}
+    {% ifequal valid_user True %}
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="page-header">
+                <h1>{{ user.user_name }}'s Tasks</h1>
+            </div>
+            <form method="post" action="/tasks">{% csrf_token %}
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Due Date</th>
+                            <th>Done (Delete)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for task in tasks %}
+                        <tr>
+                            <td>{{ task.description }}</td>
+                            <td>{{ task.due_date|timestamp_to_time|date:"m/d/Y, "}} {{ task.due_date|timestamp_to_time|time:"h:i a"}}</td>
+                            <td><a class="btn btn-xs btn-danger" href="{% url 'delete_task' task.task_id %}"> Done </a></td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td>
+                                <input class="form-control" type="text" name="description" />
+                            </td>
+                            <td>
+                                <input class="form-control" type="datetime-local" name="due_date" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-primary">
+                    Add New Task
+                </button>
+            </form>
+        </div>
+    </div>
+    {% else %}
+        {% include 'unauthorized.html' %}
+    {% endifequal %}
+{% endblock content %}

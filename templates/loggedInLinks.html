@@ -1,0 +1,9 @@
+<a class="navbar-brand links-title" href="{% url 'tasks_list' %}">Task Manager</a>
+<div class="navbar-collapse collapse navbar-responsive-collapse">
+  <ul class="nav navbar-nav">
+    <li><a href="{% url 'tasks_list' %}">Tasks</a></li>
+    <li><a href="{% url 'late_tasks' %}">Late Tasks</a></li>
+    <li><a href="{% url 'user_profile' %}">Profile</a></li>
+    <li><a href="{% url 'logout' %}"><b>Logout</b></a></li>
+  </ul>
+</div>
