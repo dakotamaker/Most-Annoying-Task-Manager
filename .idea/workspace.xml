@@ -27,27 +27,6 @@
       <change afterPath="$PROJECT_DIR$/../HW8/.idea/scala_compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW8/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../HW8/src/main/scala/HW8.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/migrations/0002_auto_20190507_1626.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/migrations/0003_auto_20190507_1808.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/migrations/0004_auto_20190508_1651.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnnoyingManager/templatetags/timestamp_to_time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/get-pip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/logInAndRegisterLinks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/loggedInLinks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/lateTasks.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/taskList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main/userProfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/unauthorized.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SessionTest/.idea/SessionTest.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SessionTest/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SessionTest/.idea/modules.xml" afterDir="false" />
@@ -73,11 +52,7 @@
       <change afterPath="$PROJECT_DIR$/../hwk11/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hwk11/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../hwk11/src/main/scala/hwk11.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnnoyingManager/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnnoyingManager/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnnoyingManager/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/AnnoyingManager/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MostAnnoyingTaskManeger/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MostAnnoyingTaskManeger/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MostAnnoyingTaskManeger/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MostAnnoyingTaskManeger/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../config/findbugs/excludeFilter.xml" beforeDir="false" />
@@ -269,7 +244,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -282,10 +257,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnnoyingManager/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AnnoyingManager/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+            <state relative-caret-position="188">
+              <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
@@ -298,15 +285,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
               <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="52" column="10" lean-forward="true" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -386,8 +364,8 @@
         <option value="$PROJECT_DIR$/templates/main/taskList.html" />
         <option value="$PROJECT_DIR$/templates/main/userProfile.html" />
         <option value="$PROJECT_DIR$/MostAnnoyingTaskManeger/urls.py" />
-        <option value="$PROJECT_DIR$/AnnoyingManager/views.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/AnnoyingManager/views.py" />
       </list>
     </option>
   </component>
@@ -525,22 +503,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557079038297</updated>
-      <workItem from="1557079041343" duration="50850000" />
+      <workItem from="1557079041343" duration="50979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50850000" />
+    <option name="totallyTimeSpent" value="50979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="253" y="1103" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.18097281" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18097281" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.40509555" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.40509555" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Console" order="4" weight="0.3299363" />
@@ -794,16 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnnoyingManager/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/unauthorized.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -874,16 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AnnoyingManager/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="18" lean-forward="true" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://3354a216-ac41-4eb3-85e8-59a02fa42b29/schema/main/table/AnnoyingManager_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -900,6 +858,26 @@
             <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnnoyingManager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnnoyingManager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="90" column="39" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -88,7 +88,7 @@ class Profile(View):
         form = forms.UserProfileForm()
         valid_user = False
         if u.exists():
-            u = models.User.objects.filter(email=email)
+            u = models.User.objects.get(email=email)
             valid_user = True
             form.initial['user_name'] = u.user_name
             form.initial['email'] = u.email
@@ -102,7 +102,7 @@ class Profile(View):
         valid_user = False
         resultMessage = ""
         if u.exists():
-            u = models.User.objects.filter(email=email)
+            u = models.User.objects.get(email=email)
             valid_user = True
             u.user_name = request.POST.get("user_name")
             u.email = request.POST.get("email")
