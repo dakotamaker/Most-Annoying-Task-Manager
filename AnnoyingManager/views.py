@@ -147,7 +147,7 @@ def delete_task(request, task_id=None):
     u = models.User.objects.filter(email=email)
     if u.exists():
         u = models.User.objects.get(email=email)
-        task = models.Task.objects.get(task_id=task_id, u=u)
+        task = models.Task.objects.get(task_id=task_id, user=u)
         task.delete()
         return redirect(r'/tasks')
     return redirect(r'/login')
