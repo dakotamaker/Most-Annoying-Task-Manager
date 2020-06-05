@@ -1,4 +1,4 @@
-Django==2.1.11
+Django==2.2.13
 
 arrow==0.12.1
 django-dramatiq==0.1.5
